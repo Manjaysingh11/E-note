@@ -1,0 +1,117 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2e2e2e;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+}
+
+header {
+    background-color: rgb(50, 50, 51);
+    padding: 10px;
+   
+}
+
+header .logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+header .menu button {
+    background-color: #007acc;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+header .menu button:hover {
+    background-color: #005c8e;
+}
+
+.sidebar {
+    background-color: rgb(37, 37, 38);
+
+    padding: 10px;
+    height: 100%;
+}
+
+.sidebar h3 {
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 9px;
+}
+
+
+
+.sidebar ul .file {
+    padding: 8px;
+    margin: 5px 0;
+    cursor: pointer;
+    font-size: 9px;
+}
+
+/*.sidebar ul .file:hover {
+    background-color: #444;
+}*/
+.sidebar ul .file::after {
+    background-color: #444;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.tabs {
+    background-color:rgb(37, 37, 38);
+    display: flex;
+    padding: 10px;
+}
+
+.tabs button {
+    background-color: #444;
+    border: none;
+    color: white;
+    margin-right: 10px;
+    cursor: pointer;
+    padding: 8px 16px;
+}
+
+.tabs button:hover {
+    background-color: #555;
+}
+
+.editor {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#codeEditor {
+    background-color: rgb(30, 30, 30);
+    color: white;
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 10px;
+    font-family: Consolas, monospace;
+    font-size: 16px;
+    resize: none;
+}
